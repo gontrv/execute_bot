@@ -35,13 +35,10 @@ namespace ExecuteBot
                     for (int i = 0; i < _executeNumber; i++)
                     {
                         _currentProxy = _rawProxyList[i];
-                        if (changerProxy.IsProxyValid(_currentProxy))
-                        {
-                            changerProxy.ChangeProxySettings(_currentProxy);
-                            _chrome = Process.Start("Chrome.exe");
-                            _chrome.WaitForExit();
-                            DeleteChromeData();
-                        }
+                        changerProxy.ChangeProxySettings(_currentProxy);
+                        _chrome = Process.Start("Chrome.exe");
+                        _chrome.WaitForExit();
+                        DeleteChromeData();
                     }
                 }
                 else
