@@ -30,15 +30,26 @@ namespace ExecuteBot
         {
             if (FillRawProxyList())
             {
-                for (int i = 0; i < _executeNumber; i++)
+                if (_rawProxyList != null)
                 {
-                    _currentProxy = _rawProxyList[i];
-                    if (changerProxy.IsProxyValid(_currentProxy))
+                    for (int i = 0; i < _executeNumber; i++)
                     {
-                        changerProxy.ChangeProxySettings(_currentProxy);
+                        _currentProxy = _rawProxyList[i];
+                        if (changerProxy.IsProxyValid(_currentProxy))
+                        {
+                            changerProxy.ChangeProxySettings(_currentProxy);
+                            _chrome = Process.Start("Chrome.exe");
+                            _chrome.WaitForExit();
+                            DeleteChromeData();
+                        }
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < _executeNumber; i++)
+                    {
                         _chrome = Process.Start("Chrome.exe");
                         _chrome.WaitForExit();
-                        DeleteChromeData();
                     }
                 }
             }
@@ -54,6 +65,7 @@ namespace ExecuteBot
             return false;
         }
 
+        // удалить куки и другие данные браузера
         private void DeleteChromeData()
         {
 

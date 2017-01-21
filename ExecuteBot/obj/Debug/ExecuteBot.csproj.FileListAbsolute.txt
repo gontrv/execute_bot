@@ -10,3 +10,13 @@ C:\Users\alex\Documents\Visual Studio 2012\Projects\ExecuteBot\ExecuteBot\bin\De
 C:\Users\alex\Documents\Visual Studio 2012\Projects\ExecuteBot\ExecuteBot\bin\Debug\Newtonsoft.Json.dll
 C:\Users\alex\Documents\Visual Studio 2012\Projects\ExecuteBot\ExecuteBot\bin\Debug\ExplorerByChrome.pdb
 C:\Users\alex\Documents\Visual Studio 2012\Projects\ExecuteBot\ExecuteBot\bin\Debug\Newtonsoft.Json.xml
+D:\execute_bot\ExecuteBot\bin\Debug\ExecuteBot.exe.config
+D:\execute_bot\ExecuteBot\obj\Debug\ExecuteBot.exe
+D:\execute_bot\ExecuteBot\obj\Debug\ExecuteBot.pdb
+D:\execute_bot\ExecuteBot\bin\Debug\ExecuteBot.exe
+D:\execute_bot\ExecuteBot\bin\Debug\ExecuteBot.pdb
+D:\execute_bot\ExecuteBot\bin\Debug\Newtonsoft.Json.dll
+D:\execute_bot\ExecuteBot\bin\Debug\ChangerProxy.pdb
+D:\execute_bot\ExecuteBot\bin\Debug\ExplorerByChrome.pdb
+D:\execute_bot\ExecuteBot\bin\Debug\Newtonsoft.Json.xml
+D:\execute_bot\ExecuteBot\obj\Debug\ExecuteBot.csprojResolveAssemblyReference.cache
